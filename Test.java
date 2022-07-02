@@ -6,7 +6,7 @@ public class Test {
         Scanner sc = new Scanner(System.in);
 
         int i;
-
+        System.out.println("this will be the new data strcutr");
         System.out.println("I");
        i= sc.nextInt();
         System.out.println(i);
