@@ -1,9 +1,29 @@
 package DS;
 import java.util.*;
-
 public class Stack {
-    public static void main(String[] args) {
-        System.out.println("Stack");
+    private int maxSize;
+    private long[] stackArray;
+    private int top;
+
+    public Stack(int s){
+        maxSize=s;
+        stackArray = new long[maxSize];
+        top=-1;
+    }
+    public void push(long j){
+        stackArray[++top]=j;
+    }
+    public long pop(){
+        return stackArray[top];
+    }
+
+    public boolean isEmpty(){
+        return (top==-1);
+    }
+
+    public boolean isFull(){
+        return (top==maxSize-1);
 
     }
 }
+
